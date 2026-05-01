@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart - HomeShelf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">HomeShelf</a>
+    <nav>
+      <a href="index.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="login.html" data-auth-link>Login</a>
+    </nav>
+  </header>
+
+  <main class="cart-layout">
+    <section>
+      <h1>Your cart</h1>
+      <div id="cart-items"></div>
+    </section>
+
+    <aside class="checkout-panel">
+      <h2>Checkout</h2>
+      <p class="total-line">Total: <strong id="cart-total">$0.00</strong></p>
+      <form id="checkout-form">
+        <label>
+          Full name
+          <input name="fullName" required>
+        </label>
+        <label>
+          Phone
+          <input name="phone" required>
+        </label>
+        <label>
+          Delivery address
+          <textarea name="address" rows="4" required></textarea>
+        </label>
+        <button id="place-order-button" type="button">Place order</button>
+      </form>
+      <div id="order-success" class="order-success" hidden>
+        <div class="success-icon">OK</div>
+        <h3>Your order has been placed</h3>
+        <p>Thank you for shopping with HomeShelf. We will start preparing your order right away.</p>
+        <p id="order-reference" class="order-reference"></p>
+        <a href="index.html">Continue shopping</a>
+      </div>
+      <p id="message" class="message"></p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - HomeShelf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">HomeShelf</a>
+    <nav>
+      <a href="index.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="auth-page">
+    <form id="login-form" class="auth-card">
+      <h1>Welcome back</h1>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" required>
+      </label>
+      <button type="submit">Login</button>
+      <p>New here? <a href="register.html">Create an account</a></p>
+      <p id="message" class="message"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

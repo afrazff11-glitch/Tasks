@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HomeShelf Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">HomeShelf</a>
+    <nav>
+      <a href="index.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="login.html" data-auth-link>Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">Simple things, nicely chosen</p>
+      <h1>Small home and desk goods that feel useful from day one.</h1>
+      <p>Browse a few everyday products, add them to your cart, and place an order through the Express and MongoDB backend.</p>
+    </section>
+
+    <section class="toolbar">
+      <h2>Products</h2>
+      <input id="search" type="search" placeholder="Search products">
+    </section>
+
+    <div id="products" class="product-grid"></div>
+    <p id="message" class="message"></p>
+  </main>
+
+  <footer>
+    <span>Project for CodeAlpha</span>
+    <a href="https://www.codealpha.tech">www.codealpha.tech</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

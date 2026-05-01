@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register - HomeShelf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">HomeShelf</a>
+    <nav>
+      <a href="index.html">Products</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="auth-page">
+    <form id="register-form" class="auth-card">
+      <h1>Create account</h1>
+      <label>
+        Name
+        <input name="username" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" minlength="6" required>
+      </label>
+      <button type="submit">Register</button>
+      <p>Already registered? <a href="login.html">Login</a></p>
+      <p id="message" class="message"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
