@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Social Media App | Feed</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="feed">
+	<header class="topbar">
+		<a href="index.html" class="logo">Social Media App</a>
+		<nav class="topbar-actions">
+			<a id="my-profile-link" href="profile.html" class="btn btn-ghost">My Profile</a>
+			<button id="logout-btn" class="btn btn-outline">Logout</button>
+		</nav>
+	</header>
+
+	<main class="layout feed-layout">
+		<section class="content-main">
+			<section class="card hero-strip">
+				<p class="badge">Live Feed</p>
+				<h1>Social updates, all in one place.</h1>
+				<p class="muted">Post your thoughts, follow people you care about, and join conversations instantly.</p>
+			</section>
+
+			<section class="feed-header">
+				<h2>Latest feed</h2>
+			</section>
+			<section id="feed-list" class="stack"></section>
+		</section>
+
+		<aside class="right-rail">
+			<article class="card composer-card">
+				<h2>Create post</h2>
+				<form id="post-form">
+					<textarea name="content" rows="4" placeholder="Share something with your followers..." required></textarea>
+					<button type="submit" class="btn btn-primary">Post</button>
+				</form>
+			</article>
+
+			<article class="card sidebar">
+				<h2>Community</h2>
+				<p class="muted">Browse member profiles.</p>
+				<div id="users-list" class="list"></div>
+			</article>
+		</aside>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

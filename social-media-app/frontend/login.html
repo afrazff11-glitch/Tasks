@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Social Media App | Login</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="login">
+	<main class="auth-shell">
+		<section class="brand-panel">
+			<p class="badge">Task 2</p>
+			<h1>Share your world in a cleaner space.</h1>
+			<p class="subtitle">Build your profile, publish posts, comment on updates, and grow followers with a modern social workflow.</p>
+			<div class="feature-pills">
+				<span>Profiles</span>
+				<span>Posts & Comments</span>
+				<span>Like / Follow</span>
+			</div>
+		</section>
+
+		<section class="auth-panel">
+			<p class="section-kicker">Welcome back</p>
+			<div class="auth-grid">
+				<form id="login-form" class="card auth-card">
+					<h2>Login</h2>
+					<label>
+						Username
+						<input type="text" name="username" required />
+					</label>
+					<label>
+						Password
+						<input type="password" name="password" required />
+					</label>
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+
+				<form id="register-form" class="card auth-card">
+					<h2>Register</h2>
+					<label>
+						Full name
+						<input type="text" name="fullName" required />
+					</label>
+					<label>
+						Username
+						<input type="text" name="username" required />
+					</label>
+					<label>
+						Password
+						<input type="password" name="password" required />
+					</label>
+					<button type="submit" class="btn btn-secondary">Create account</button>
+				</form>
+			</div>
+			<p id="auth-message" class="message"></p>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

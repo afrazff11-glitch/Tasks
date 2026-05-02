@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Social Media App | Profile</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="profile">
+	<header class="topbar">
+		<a href="index.html" class="logo">Social Media App</a>
+		<nav class="topbar-actions">
+			<a href="index.html" class="btn btn-ghost">Feed</a>
+			<button id="logout-btn" class="btn btn-outline">Logout</button>
+		</nav>
+	</header>
+
+	<main class="layout profile-layout">
+		<section class="card hero-strip compact">
+			<p class="badge">Profile</p>
+			<h1>Your social identity, refined.</h1>
+		</section>
+		<section id="profile-card" class="card profile-hero profile-column"></section>
+		<section class="profile-posts-column">
+			<h2>Posts</h2>
+			<div id="profile-posts" class="stack"></div>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
